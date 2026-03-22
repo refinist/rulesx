@@ -1,8 +1,19 @@
-# rulesx
+<pre align="center">
+██████╗  ██╗   ██╗ ██╗      ███████╗ ███████╗ ██╗  ██╗
+██╔══██╗ ██║   ██║ ██║      ██╔════╝ ██╔════╝ ╚██╗██╔╝
+██████╔╝ ██║   ██║ ██║      █████╗   ███████╗  ╚███╔╝
+██╔══██╗ ██║   ██║ ██║      ██╔══╝   ╚════██║  ██╔██╗
+██║  ██║ ╚██████╔╝ ███████╗ ███████╗ ███████║ ██╔╝ ██╗
+╚═╝  ╚═╝  ╚═════╝  ╚══════╝ ╚══════╝ ╚══════╝ ╚═╝  ╚═╝
+</pre>
 
-[![npm](https://img.shields.io/npm/v/rulesx.svg?colorA=2c2a22&colorB=f8f8f6)](https://npmjs.com/package/rulesx) [![Unit Test](https://img.shields.io/github/actions/workflow/status/refinist/rulesx/unit-test.yml?colorA=2c2a22&colorB=f8f8f6&label=Unit%20Test)](https://github.com/refinist/rulesx/actions/workflows/unit-test.yml) [![codecov](https://img.shields.io/codecov/c/github/refinist/rulesx?colorA=2c2a22&colorB=f8f8f6)](https://codecov.io/github/refinist/rulesx)
+<p align="center"><i>Install rules like you install skills.</i></p>
 
-Minimal CLI to install AI agent rules from git repositories.
+<p align="center">
+  <a href="https://npmjs.com/package/rulesx"><img src="https://img.shields.io/npm/v/rulesx.svg?colorA=2c2a22&colorB=f8f8f6" alt="npm" /></a>
+  <a href="https://github.com/refinist/rulesx/actions/workflows/unit-test.yml"><img src="https://img.shields.io/github/actions/workflow/status/refinist/rulesx/unit-test.yml?colorA=2c2a22&colorB=f8f8f6&label=Unit%20Test" alt="Unit Test" /></a>
+  <a href="https://codecov.io/github/refinist/rulesx"><img src="https://img.shields.io/codecov/c/github/refinist/rulesx?colorA=2c2a22&colorB=f8f8f6" alt="codecov" /></a>
+</p>
 
 **English** | [中文](./README.zh-CN.md)
 
