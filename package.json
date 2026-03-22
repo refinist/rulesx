@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "packageManager": "pnpm@10.32.1",
-  "description": "Minimal CLI to install .mdc rules from git repos into .cursor/rules/",
+  "description": "Install rules like you install skills.",
   "author": "REFINIST",
   "license": "MIT",
   "homepage": "https://github.com/refinist/rulesx",
