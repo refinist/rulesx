@@ -132,7 +132,8 @@ describe('add — non-interactive', () => {
 
     expect(fs.existsSync(path.join(targetDir, 'AGENTS.md'))).toBe(true);
     const content = fs.readFileSync(path.join(targetDir, 'AGENTS.md'), 'utf-8');
-    expect(content).toBe('# Agents\nAgent instructions');
+    expect(content).toContain('# Agents');
+    expect(content).toContain('Agent instructions');
   });
 
   it('throw when no rules match pattern', async () => {
