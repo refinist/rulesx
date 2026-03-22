@@ -74,10 +74,13 @@ beforeAll(() => {
     '---\ndescription: Claude instructions\n---\n\n# Claude\nClaude content'
   );
 
-  execSync("git init && git add -A && git commit -m 'init'", {
-    cwd: fixtureRepo,
-    stdio: 'ignore'
-  });
+  execSync(
+    "git init && git add -A && git -c user.name=test -c user.email=test@test.com commit -m 'init'",
+    {
+      cwd: fixtureRepo,
+      stdio: 'ignore'
+    }
+  );
 });
 
 afterAll(() => {
@@ -140,10 +143,13 @@ describe('add — non-interactive', () => {
 
   it('throw when repo has no rules', async () => {
     const emptyRepo = fs.mkdtempSync(path.join(__dirname, '.empty-'));
-    execSync("git init && git commit --allow-empty -m 'init'", {
-      cwd: emptyRepo,
-      stdio: 'ignore'
-    });
+    execSync(
+      "git init && git -c user.name=test -c user.email=test@test.com commit --allow-empty -m 'init'",
+      {
+        cwd: emptyRepo,
+        stdio: 'ignore'
+      }
+    );
 
     try {
       await expect(add(emptyRepo, '*', ni(targetDir))).rejects.toThrow(
@@ -216,10 +222,13 @@ describe('add — non-interactive', () => {
   it('installs only root files when no rules/ directory', async () => {
     const rootOnlyRepo = fs.mkdtempSync(path.join(__dirname, '.rootonly-'));
     fs.writeFileSync(path.join(rootOnlyRepo, 'AGENTS.md'), '# Root agents');
-    execSync("git init && git add -A && git commit -m 'init'", {
-      cwd: rootOnlyRepo,
-      stdio: 'ignore'
-    });
+    execSync(
+      "git init && git add -A && git -c user.name=test -c user.email=test@test.com commit -m 'init'",
+      {
+        cwd: rootOnlyRepo,
+        stdio: 'ignore'
+      }
+    );
 
     try {
       await add(rootOnlyRepo, '*', ni(targetDir));
