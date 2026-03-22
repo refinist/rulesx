@@ -14,6 +14,20 @@
   "bugs": {
     "url": "https://github.com/refinist/rulesx/issues"
   },
+  "keywords": [
+    "rules",
+    "cursor",
+    "mdc",
+    "ai",
+    "agent",
+    "cli",
+    "cursor-rules",
+    "agents-md",
+    "claude",
+    "copilot",
+    "windsurf",
+    "cline"
+  ],
   "bin": {
     "rulesx": "./dist/index.mjs"
   },
