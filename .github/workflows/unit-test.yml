@@ -9,6 +9,8 @@ on:
 jobs:
   unit-test:
     uses: refinist/workflows/.github/workflows/unit-test.yml@v1
+    with:
+      node-versions: '20,22,24'
 
   coverage:
     uses: refinist/workflows/.github/workflows/coverage.yml@v1
